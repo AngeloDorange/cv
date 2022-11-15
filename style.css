@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?falmily=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+  
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.content{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: white;
+    display: grid;
+    grid-template-columns:  1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.content .left{
+    position: relative;
+    background: #191970;
+    padding: 40px;
+}
+.profiletxt{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f1f1fa;
+}
+.profiletxt .imgl{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.profiletxt .imgl img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.profiletxt h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.contact{
+    padding-top: 30px;
+    position: relative;
+}
+.title{
+    color: skyblue;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact ul{
+    position: relative;
+}
+.contact ul li{
+    display: flex;
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+.contact ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 1.5em;
+    color: #f1f1fa;
+}
+.contact ul li .icon:hover{
+    color: #6d6d6d;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+.contact ul li span{
+    color: white;
+    font-weight: 300;
+}
+.profiletxt h2 span{
+    font-size: 0.5em;
+    font-weight: 300;
+}
+.contact-education{
+    position: relative;
+    padding-top: 30px;
+}
+.contact-education .uil, .langages .uil {
+    color: #f1f1fa;
+}
+.contact-education li{
+    margin-bottom: 15px;
+    list-style: none;
+}
+.contact-education h5{
+    color: lightblue;
+    font-weight: 500;
+}
+.contact-education h4:nth-child(2){
+    color: white;
+    font-weight: 500;
+}
+.contact-education h4{
+    color: white;
+    font-weight: 500;
+}
+.langages{
+    padding-top: 30px;
+}
+.langages ul{
+    list-style: none;
+}
+.langages .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #081921;
+    display: block;
+    margin-top: 10px;
+}
+.langages .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: skyblue;
+}
+.langages .text{
+    color: #6d6d6d;
+}
+
+
+
+.content .right{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about p{
+    line-height: 1.7;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color: black;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin:  20px 0;
+}
+.about .box .year{
+    min-width: 150px;
+}
+.a .box .year h5{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 600;
+}
+.about .box .text h4{
+    text-transform: uppercase;
+    color: skyblue;
+    font-size: 16px;
+}
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4{
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 500;
+}
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: black;
+}
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: skyblue;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: black;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .uil{
+    color: skyblue;
+    font-size: 18px;
+    width: 20px;
+}
+
+@media (max-width: 1000px){
+    .content{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
